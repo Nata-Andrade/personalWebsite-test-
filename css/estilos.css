@@ -1,8 +1,13 @@
 body {
-  background-image: url('https://thumbs.dreamstime.com/b/estilo-do-fundo-da-matriz-wallpa-tela-v%C3%ADrus-e-hacker-de-computador-119989759.jpg');
-  background-size: auto 100vh; 
   font-family: Arial;
-  height: 100vh;
+}
+
+.backimg {
+  background: url("https://cdn.pixabay.com/photo/2017/05/29/18/22/matrix-2354492_960_720.jpg");
+  width: 1345px;
+  height: 640px;
+  filter: blur(1.2px) opacity(95%) grayscale(50%);
+
 }
 
 .menu {
@@ -11,12 +16,19 @@ body {
 
 .menu ul {
   display: flex;
-  justify-content: space-around;
+  position: absolute;
+  padding: 0px 100px;
+  justify-content: space-between;
+  top: 0px;
+  left: 50px;
+  background-color: whitesmoke;
 }
 
 .menu li {
- list-style: none; 
+  list-style: none;
+  padding: 0px 50px;
 }
+
 
 a {
   color: teal;
@@ -27,12 +39,14 @@ a:hover {
   text-decoration: underline;
 }
 
-.site-subtitle, 
-.site-title {
-  color: whitesmoke;
+.h1n2 {
   text-align: center;
+  color: whitesmoke;
+  position: absolute;
+  top: 20px;
+  left: 550px;
 }
 
 .site-subtitle {
- font-style: italic;
+  font-style: italic;
 }
