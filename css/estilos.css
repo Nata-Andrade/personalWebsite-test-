@@ -1,13 +1,14 @@
-body {
-  font-family: Arial;
+* {
+  backdrop-filter: blur(2.5px) grayscale(33%) saturate(90%) opacity(100%);
 }
 
-.backimg {
-  background: url("https://cdn.pixabay.com/photo/2017/05/29/18/22/matrix-2354492_960_720.jpg");
-  width: 1345px;
-  height: 640px;
-  filter: blur(1.2px) opacity(95%) grayscale(50%);
-
+body {
+  background-image: url('../img/matrix.jpg');
+  background-size: auto 100vh; 
+  font-family: Arial;
+  height: 657px;
+  margin: 0px;
+  box-sizing: content-box;
 }
 
 .menu {
@@ -16,19 +17,12 @@ body {
 
 .menu ul {
   display: flex;
-  position: absolute;
-  padding: 0px 100px;
-  justify-content: space-between;
-  top: 0px;
-  left: 50px;
-  background-color: whitesmoke;
+  justify-content: space-around;
 }
 
 .menu li {
-  list-style: none;
-  padding: 0px 50px;
+  list-style: none; 
 }
-
 
 a {
   color: teal;
@@ -39,12 +33,10 @@ a:hover {
   text-decoration: underline;
 }
 
-.h1n2 {
-  text-align: center;
+.site-subtitle, 
+.site-title {
   color: whitesmoke;
-  position: absolute;
-  top: 20px;
-  left: 550px;
+  text-align: center;
 }
 
 .site-subtitle {
